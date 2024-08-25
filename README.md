@@ -20,7 +20,8 @@ This Lambda function provides a workaround for this limitation by directly copyi
 ## Installation
 
 1. Clone this repository to your local machine.
-2. Create an S3 bucket to store the Lambda deployment package.
+2. Create a Lambda function.
+3. Copy the code in `lambda_function.py`
 
 # Configuration
 The Lambda function requires the following parameters in the event that triggers the function:
