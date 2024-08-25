@@ -16,12 +16,16 @@ This Lambda function provides a workaround for this limitation by directly copyi
 
 - An AWS account with permissions to create and manage Lambda functions, S3 buckets, and CloudWatch Events (if scheduling is required).
 - Python 3.7 or later (if you need to modify the Lambda function code).
+- (Optional) AWS CLI to deploy CloudFormation template.
 
 ## Installation
-
-1. Clone this repository to your local machine.
-2. Create a Lambda function.
-3. Copy the code in `lambda_function.py`
+1. Clone this repository
+2. Deploy CloudFormation template in `template.yaml.
+   ```bash
+   aws cloudformation deploy --stack-name myteststack \
+      --template template.yaml
+   ```
+3. Alternatively, you can use [Application Composer](https://aws.amazon.com/application-composer/).
 
 # Configuration
 The Lambda function requires the following parameters in the event that triggers the function:
